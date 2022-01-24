@@ -29,8 +29,8 @@ adb shell pm clear com.loyo.elcm
 # 查看前台Activity
 adb shell dumpsys activity top | grep ACTIVITY
 
-# 查看指定包名运行的Activity
- adb shell dumpsys activity activities | grep com.loyo.elcm
+# 查看指定包名正在运行的Activity
+ adb shell dumpsys activity activities | grep com.loyo.elcm | grep Activities
 
 # 查看正在运行的Services [<package-name>]非必须，能够配合grep使用
 adb shell dumpsys activity services com.loyo.elcm
